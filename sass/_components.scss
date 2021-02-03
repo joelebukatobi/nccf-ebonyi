@@ -1,0 +1,86 @@
+.btn {
+  height: 5.6rem;
+  padding: 0 4.8rem;
+  background-color: $color-primary;
+  color: $color-white !important;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: $font-primary;
+  outline: none;
+  border: 0px;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  & a {
+    color: $color-white !important;
+  }
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  & .separator {
+    width: 10rem;
+    margin-right: 3.2rem;
+  }
+  & .button-link {
+    & .heading-4 {
+      font-weight: 100;
+      color: $color-primary-light;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 576px) {
+    & .button-link {
+      & .heading-4 {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.select {
+  height: 5.6rem;
+  background-color: $color-white;
+  border-radius: 0.5rem;
+  border: 0.2rem solid $color-primary;
+  padding-left: 1.6rem;
+  font-family: $font-primary;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.input {
+  height: 5.6rem;
+  background-color: $color-white;
+  border-radius: 0.5rem;
+  border: 0.2rem solid $color-primary;
+  padding-left: 1.6rem;
+  font-family: $font-primary;
+  font-size: 1.6rem;
+  font-weight: 500;
+  &::placeholder {
+    font-family: $font-primary;
+    font-size: 1.6rem;
+  }
+}
+
+.textarea {
+  background-color: $color-white;
+  border-radius: 0.5rem;
+  border: 0.2rem solid $color-primary;
+  padding-top: 1.6rem;
+  padding-left: 1.6rem;
+  font-size: 1.6rem;
+  font-family: $font-primary;
+  &::placeholder {
+    font-size: 1.6rem;
+    color: $color-grey;
+  }
+}
+
+.separator {
+  height: 0.15rem;
+  border: none;
+  background-color: $color-secondary;
+  margin: 1.6rem 0;
+}
